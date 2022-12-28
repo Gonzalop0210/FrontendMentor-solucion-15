@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+body {
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    display: flex;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container__main {
+    min-width: 305px;
+    margin-top: 30px;
+}
+
+.logo__img {
+    width: 45%;
+    margin-bottom: 60px;
+}
+
+.img__principal {
+    width: 100%;
+}
+
+.container__section__content {
+    text-align: center;
+    color: #FFF;
+}
+
+.title {
+    font-family: 'Poppins';
+    font-size: 1.2em;
+    margin-top: 60px;
+}
+
+.paragraph {
+    font-family: 'Open Sans';
+    letter-spacing: .5px;
+    font-size: .8em;
+    line-height: 1.6em;
+    margin: 30px 0;
+}
+
+.button__register {
+    background-color: #FFF;
+    color: hsl(257, 40%, 49%);
+    border: none;
+    font-size: .8em;
+    width: 80%;
+    padding: 10px 0;
+    border-radius: 30px;
+    font-family: 'Poppins';
+    transition: .3s;
+}
+
+.button__register:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: #FFF;
+    cursor: pointer;
+}
+
+.list__social {
+    list-style: none;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    gap: 15px;
+}
+
+.icon__social {
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    padding: 8px;
+    font-size: .85em;
+    transition: .3s;
+}
+
+.icon__social:hover {
+    border-color: hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+
+.social__facebook {
+    padding-left: 11px;
+    padding-right: 11px;
+}
+
+@media only screen and (min-width:892px) {
+    * {
+        font-size: 18px;
+    }
+
+    body {
+        background-image: url(images/bg-desktop.svg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container__main {
+        display: flex;
+        align-items: center;
+        max-width: 890px;
+        max-height: 430px;
+        margin-top: 0;
+    }
+
+    .container__section__content {
+        width: 50%;
+    }
+
+    .container__section__img {
+        height: 100%;
+        width: 50%;
+    }
+
+    .container__section__content {
+        margin-left: 30px;
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        height: 100%;
+    }
+
+    .title {
+        margin-top: 0;
+    }
+
+    .paragraph {
+        margin: 10px 0;
+    }
+
+    .button__register {
+        width: 40%;
+    }
+
+    .list__social {
+        margin-top: 50px;
+        justify-content: end;
+    }
+}
